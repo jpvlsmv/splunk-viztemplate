@@ -6,7 +6,7 @@ define([
             'underscore',
             'vizapi/SplunkVisualizationBase',
             'vizapi/SplunkVisualizationUtils'
-            // Add required assets to this list
+            // FIXME: Add required assets to this list
         ],
         function(
             $,
@@ -25,14 +25,14 @@ define([
             this.$el.append('<h3>This is a custom visualization stand in.</h3>');
             this.$el.append('<p>Edit your custom visualization app to render something here.</p>');
             
-            // Initialization logic goes here
+            // FIXME: Initialization logic goes here
         },
 
         // Optionally implement to format data returned from search. 
         // The returned object will be passed to updateView as 'data'
         formatData: function(data) {
 
-            // Format data 
+            // TODO: Format data if necessary
 
             return data;
         },
@@ -41,7 +41,7 @@ define([
         //  'data' will be the data object returned from formatData or from the search
         //  'config' will be the configuration property object
         updateView: function(data, config) {
-            
+            // FIXME: your code here
             // Draw something here
 
         },
@@ -49,7 +49,8 @@ define([
         // Search data params
         getInitialDataParams: function() {
             return ({
-                outputMode: SplunkVisualizationBase.ROW_MAJOR_OUTPUT_MODE,
+	        // TODO: Do you want your data in JSON?
+                outputMode: SplunkVisualizationBase.RAW_OUTPUT_MODE,
                 count: 10000
             });
         },

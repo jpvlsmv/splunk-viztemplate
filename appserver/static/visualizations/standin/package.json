@@ -1,6 +1,7 @@
 {
-  "name": "standin",
-  "version": "1.0.0",
+  "FIXME": "change the name, version, and description",
+  "name": "splunk-viztemplate",
+  "version": "0.0.0",
   "description": "Visualization app template. Put a description here.",
   "main": "visualization.js",
   "scripts": {
@@ -8,7 +9,8 @@
     "devbuild": "node ./node_modules/webpack/bin/webpack.js --progress",
     "watch": "node ./node_modules/webpack/bin/webpack.js -d --watch --progress"
   },
-  "author": "Splunk",
+  "FIXME": "change author",
+  "author": "template",
   "license": "MIT",
   "devDependencies": {
     "webpack": "^1.12.6"

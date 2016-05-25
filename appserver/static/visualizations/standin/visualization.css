@@ -2,4 +2,7 @@
  * CSS rules for visualization.
  * Class namespacing is good practice.
  */
-
+/* TODO: set your own CSS here */
+.splunk-viztemplate .myclass {
+    font-size: 18px;
+}
