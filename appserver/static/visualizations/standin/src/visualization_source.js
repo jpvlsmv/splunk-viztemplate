@@ -13,6 +13,7 @@ define([
             _,
             SplunkVisualizationBase,
             vizUtils
+            // FIXME: Add required assets to this list.  Must be in the same order as above
         ) {
   
     // Extend from SplunkVisualizationBase
@@ -22,9 +23,12 @@ define([
             SplunkVisualizationBase.prototype.initialize.apply(this, arguments);
             this.$el = $(this.el);
 
+	    // FIXME: change class name
+	    this.$el.addClass( 'splunk-viztemplate' );
+
             this.$el.append('<h3>This is a custom visualization stand in.</h3>');
             this.$el.append('<p>Edit your custom visualization app to render something here.</p>');
-            
+
             // FIXME: Initialization logic goes here
         },
 
@@ -42,6 +46,10 @@ define([
         //  'config' will be the configuration property object
         updateView: function(data, config) {
             // FIXME: your code here
+	    
+	    // Your configuration options (see formatter.html) 
+	    // myoption = config['display.visualizations.custom.splunk-viztemplate.working'];
+
             // Draw something here
 
         },
@@ -56,6 +64,8 @@ define([
         },
 
         // Override to respond to re-sizing events
-        reflow: function() {}
+        reflow: function() {
+	    // TODO: Update based on this.$el.width() and .height()
+	}
     });
 });
