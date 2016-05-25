@@ -3,7 +3,9 @@ Sample viz template
 
 Introduction
 --------------------------
-Put this repository in $SPLUNK_HOME/share/splunk/app_templates/ and you can create apps based on it.
+Put this repository in $SPLUNK_HOME/share/splunk/app_templates/ and you can create apps based on it.  Or download it to your preferred $SPLUNK_HOME/etc/{distributed|cluster|available|}apps/ application name and make your changes.
+
+Suggestions, comments, etc are WELCOME.
 
 Data formatting
 --------------------------
