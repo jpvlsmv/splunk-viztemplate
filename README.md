@@ -5,6 +5,8 @@ Introduction
 --------------------------
 Put this repository in $SPLUNK_HOME/share/splunk/app_templates/ and you can create apps based on it.  Or download it to your preferred $SPLUNK_HOME/etc/{distributed|cluster|available|}apps/ application name and make your changes.
 
+Files that need to be changed can be found by ```find * -type f -exec grep -l -e FIXME -e TODO {} +``` at locations marked with either ```FIXME:``` that must be changed and ```TODO:``` that depend on the features of your viz.
+
 Suggestions, comments, etc are WELCOME.
 
 Data formatting
